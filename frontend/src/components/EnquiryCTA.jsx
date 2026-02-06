@@ -11,10 +11,10 @@ export default function EnquiryCTA() {
       <div className="cta-box">
         <div className="cta-content">
           <div className="cta-text">
-            <h2>Still Thinking About Joining?</h2>
+            <h2>Have Questions About Our Yoga Classes?</h2>
             <p>
-              Ask us anything about memberships, trainers, timings or
-              facilities. Our team will guide you personally.
+              Ask us anything about class timings, batches, instructors or
+              plans. We’re happy to guide you.
             </p>
 
             <button className="cta-btn" onClick={() => navigate("/contact")}>
