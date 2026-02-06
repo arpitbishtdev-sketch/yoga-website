@@ -66,10 +66,9 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Pranayama & Breathing</h3>
+              <h3>Meditation</h3>
               <p>
-                Learn breathing techniques to calm the mind and increase lung
-                capacity.
+                Guided meditation sessions for mental clarity and inner peace.
               </p>
             </div>
           </div>
@@ -96,9 +95,10 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Meditation</h3>
+              <h3>Pranayama & Breathing</h3>
               <p>
-                Guided meditation sessions for mental clarity and inner peace.
+                Learn breathing techniques to calm the mind and increase lung
+                capacity.
               </p>
             </div>
           </div>
