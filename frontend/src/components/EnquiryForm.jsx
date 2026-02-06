@@ -43,6 +43,9 @@ export default function EnquiryForm() {
   return (
     <form className="enquiry-form" onSubmit={handleSubmit}>
       <h2>Send us a message</h2>
+      <p style={{ color: "#666", marginBottom: "10px" }}>
+        Have questions about memberships or classes? We’re here to help.
+      </p>
 
       <div className="row">
         <input

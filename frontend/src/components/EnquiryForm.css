@@ -1,50 +1,70 @@
 .enquiry-form {
   display: flex;
   flex-direction: column;
+  gap: 22px;
+}
+
+/* Title */
+.enquiry-form h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* row */
+.row {
+  display: flex;
   gap: 18px;
 }
 
-.enquiry-form h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.row {
-  display: flex;
-  gap: 14px;
-}
-
+/* inputs */
 .enquiry-form input,
 .enquiry-form textarea {
   width: 100%;
-  padding: 14px 16px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  font-size: 15px;
-  transition: 0.2s ease;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  background: #fafafa;
+  transition: all 0.25s ease;
+  font-family: inherit;
 }
 
+/* premium focus */
 .enquiry-form input:focus,
 .enquiry-form textarea:focus {
   outline: none;
+  background: white;
   border-color: #1cff4b;
-  box-shadow: 0 0 0 3px rgba(28, 255, 75, 0.2);
+  box-shadow:
+    0 0 0 4px rgba(28, 255, 75, 0.18),
+    0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+/* textarea feel */
+.enquiry-form textarea {
+  resize: none;
+}
+
+/* BUTTON — make it match gym brand */
 .enquiry-form button {
-  margin-top: 10px;
-  padding: 14px;
-  border-radius: 12px;
+  margin-top: 12px;
+  padding: 18px;
+  border-radius: 16px;
   border: none;
-  background: #2f5aff;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
+  background: linear-gradient(135deg, #1cff4b, #14b93a);
+  color: #0b0f14;
+  font-weight: 800;
+  font-size: 17px;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.6px;
+  box-shadow: 0 15px 35px rgba(28, 255, 75, 0.35);
 }
 
+/* hover */
 .enquiry-form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(47, 90, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px rgba(28, 255, 75, 0.5);
 }
