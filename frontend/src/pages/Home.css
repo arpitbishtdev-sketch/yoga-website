@@ -15,31 +15,47 @@ section {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-
-  border-radius: 24px;
-  padding: 120px 80px;
-
+  border-radius: 28px;
+  padding: 140px 100px;
   position: relative;
   overflow: hidden;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+/* Cinematic premium overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.55) 35%,
+    rgba(0, 0, 0, 0.15) 65%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+/* Text container */
+.hero > div {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
 }
 
 /* ===== TEXT ===== */
 .hero-title {
-  font-size: 64px;
-  font-weight: 800;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  line-height: 1.1;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.05;
+  color: white;
+  margin-bottom: 22px;
 }
 
 .rotate-box {
-  color: #e91e63;
+  color: #ff4d8d;
   padding: 8px 18px;
   border-radius: 10px;
   display: inline-flex;
@@ -48,26 +64,28 @@ section {
 
 .hero p {
   font-size: 20px;
-  margin: 25px 0 40px;
-  line-height: 1.6;
-  max-width: 600px;
+  line-height: 1.7;
+  color: #d1e8ff;
+  margin-bottom: 40px;
 }
 
-/* ===== BUTTON ===== */
 .join-btn {
-  padding: 14px 36px;
+  padding: 16px 44px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 50px;
   border: none;
-  background: linear-gradient(135deg, #e91e63, #f06292);
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #ff4d8d, #4a90e2);
   color: white;
   cursor: pointer;
-  font-weight: 600;
+  box-shadow: 0 15px 40px rgba(255, 77, 141, 0.35);
   transition: 0.3s ease;
 }
 
 .join-btn:hover {
   transform: translateY(-4px);
+  box-shadow: 0 20px 55px rgba(74, 144, 226, 0.45);
 }
 
 .experience-section {
@@ -165,25 +183,20 @@ section {
   }
 
   .hero {
+    padding: 160px 28px 100px;
     border-radius: 0;
-    max-width: 100%;
-    margin: 0;
-    padding: 140px 24px 80px;
-    min-height: 100vh;
   }
-
   .card-nav-container {
     position: fixed; /* 👈 ye main fix hai */
     top: 12px;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .hero p {
-    font-size: 15px;
-    max-width: 100%;
+    font-size: 16px;
   }
 
   .join-btn {

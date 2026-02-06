@@ -1,7 +1,7 @@
 .loader-screen {
   position: fixed;
   inset: 0;
-  background: #0b0f14;
+  background: linear-gradient(145deg, #fffafb, #ffeaf3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,11 +12,18 @@
   text-align: center;
 }
 
+.loader-box h1 {
+  color: #e91e63;
+  letter-spacing: 6px;
+  font-weight: 800;
+  font-size: 28px;
+}
+
 .loader-line {
-  width: 240px;
+  width: 220px;
   height: 3px;
   margin: 18px auto 0;
-  background: #1cdb2c;
+  background: #4a90e2;
   animation: load 1.2s ease-in-out infinite;
 }
 
