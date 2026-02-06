@@ -29,7 +29,8 @@
 }
 
 .cta-box h2 {
-  font-size: 48px;
+  color: #444;
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
@@ -78,28 +79,28 @@
 .cta-image {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* push to right */
+  align-items: center;
 }
 
 .cta-image img {
-  width: 350px;
+  width: 420px;
   height: auto;
   object-fit: contain;
-  opacity: 0.95;
-  transform: rotate(8deg);
-  transition: transform 0.3s ease;
-  animation: floatImg 4s ease-in-out infinite;
+
+  transform: none; /* remove tilt */
+  animation: breathe 4s ease-in-out infinite;
 }
 
-@keyframes floatImg {
+@keyframes breathe {
   0% {
-    transform: rotate(8deg) translateY(0px);
+    transform: scale(1);
   }
   50% {
-    transform: rotate(8deg) translateY(-10px);
+    transform: scale(1.06);
   }
   100% {
-    transform: rotate(8deg) translateY(0px);
+    transform: scale(1);
   }
 }
 
