@@ -66,16 +66,15 @@
 }
 
 .logo-container h2 {
-  color: #1aff4b;
+  color: #e91e63;
   letter-spacing: 3px;
   font-weight: 700;
-  text-shadow: 0 0 12px rgba(26, 255, 75, 0.7);
+  text-shadow: 0 0 18px rgba(233, 30, 99, 0.35);
 }
 
-/* 🔥 Premium CTA button */
 .card-nav-cta-button {
-  background: linear-gradient(135deg, #1aff4b, #0edb3f);
-  color: #000;
+  background: linear-gradient(135deg, #e91e63, #f06292);
+  color: white;
   border: none;
   border-radius: 30px;
   padding: 0 22px;
@@ -83,12 +82,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 6px 20px rgba(26, 255, 75, 0.4);
+  box-shadow: 0 8px 24px rgba(233, 30, 99, 0.35);
 }
 
 .card-nav-cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(26, 255, 75, 0.6);
+  box-shadow: 0 12px 30px rgba(233, 30, 99, 0.5);
 }
 
 .card-nav-content {
@@ -113,7 +112,7 @@
   height: 100%; /* ✅ added */
   border-radius: 18px;
 
-  background: linear-gradient(145deg, #0f172a, #111827);
+  background: linear-gradient(145deg, #ffffff, #ffeaf3);
 
   padding: 32px 36px;
   display: flex;
@@ -152,7 +151,7 @@
 }
 
 .nav-card-link:hover {
-  color: #22c55e; /* gym green on hover */
+  color: #e91e63;
   transform: translateX(6px);
 }
 
