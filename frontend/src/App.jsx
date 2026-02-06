@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { useNavigation } from "react-router-dom";
 
+import useRouteLoader from "./hooks/useRouteLoader";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -32,6 +34,7 @@ function Layout() {
   const API = import.meta.env.VITE_API_URL;
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
+  const loading = useRouteLoader();
 
   // ✅ Check login from backend cookie
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -92,7 +95,7 @@ function Layout() {
 
   return (
     <>
-      {isLoading && <Loader />}
+      {loading && <Loader />}
 
       <ScrollToTop />
 
