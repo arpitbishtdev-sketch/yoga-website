@@ -96,15 +96,14 @@ function Home() {
               Transform{" "}
               <span className="rotate-box">
                 <RotatingText
-                  texts={["Your Body 💪🏻", "Your Mind 🧠", "Your Soul 🪷"]}
-                  rotationInterval={2000}
+                  texts={["Your Mind 🧘", "Your Breath 🌿", "Your Balance 🪷"]}
                 />
               </span>
             </h1>
 
-            <p style={{ color: "#1cdb2c" }}>
-              Join the best gym in your city. Modern equipment, expert trainers,
-              and real results.
+            <p style={{ color: "#4A90E2" }}>
+              Experience calm, balance and strength through guided yoga
+              sessions.
             </p>
 
             <button className="join-btn" onClick={handleHeroButtonClick}>
