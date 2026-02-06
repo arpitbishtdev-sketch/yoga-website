@@ -76,7 +76,7 @@ function Home() {
               Transform{" "}
               <span className="rotate-box">
                 <RotatingText
-                  texts={["Your Mind 🧘", "Your Breath 🌿", "Your Balance 🪷"]}
+                  texts={["Your Mind 🧘", "Your Breath 🌿", "Your Soul 🪷"]}
                 />
               </span>
             </h1>
