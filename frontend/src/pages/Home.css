@@ -39,7 +39,7 @@ section {
 }
 
 .rotate-box {
-  color: #1cdb2c;
+  color: #e91e63;
   padding: 8px 18px;
   border-radius: 10px;
   display: inline-flex;
@@ -133,7 +133,7 @@ section {
 }
 
 .experience-left li::marker {
-  color: #1cdb2c;
+  color: #e91e63;
 }
 
 .experience-right {
@@ -274,10 +274,8 @@ section {
   width: 200px;
   border-radius: 50%;
   padding: 14px;
-  background: radial-gradient(circle, #0f1f17, #0a0f0c);
-  box-shadow:
-    0 0 25px rgba(28, 219, 44, 0.35),
-    inset 0 0 25px rgba(28, 219, 44, 0.15);
+  background: white;
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
 }
 
 /* ===== RIGHT SIDE GRID ===== */
@@ -290,7 +288,8 @@ section {
 
 /* ===== EACH STAT = PREMIUM CARD ===== */
 .stat-box {
-  background: linear-gradient(145deg, #0d1511, #0a0f0c);
+  background: white;
+  box-shadow: 0 15px 40px rgba(233, 30, 99, 0.12);
   border-radius: 22px;
   padding: 28px 22px;
 
@@ -341,7 +340,7 @@ section {
 /* label */
 .stat-label {
   font-size: 15px;
-  color: #d8f5df;
+  color: #555;
   letter-spacing: 0.6px;
 }
 

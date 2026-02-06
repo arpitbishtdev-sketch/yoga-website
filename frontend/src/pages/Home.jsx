@@ -119,9 +119,9 @@ function Home() {
       <ScrollVelocity
         texts={[
           <>
-            <span className="ip-highlight">• IRON PARADISE</span> GYM
+            <span className="ip-highlight">• MAHADEVAM YOGA</span> STUDIO
           </>,
-          "• TRAIN • TRANSFORM • REPEAT",
+          "• BREATHE • BALANCE • FLOW",
         ]}
         velocity={100}
         className="custom-scroll-text"
