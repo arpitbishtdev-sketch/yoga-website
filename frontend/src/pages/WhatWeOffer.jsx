@@ -36,10 +36,10 @@ function WhatWeOffer() {
             />
 
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Muscle Training</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                Hypertrophy focused weight training with progressive overload
-                plans.
+              <h3>Hatha Yoga</h3>
+              <p>
+                Foundational postures to improve flexibility, posture and body
+                awareness.
               </p>
             </div>
           </div>
@@ -66,9 +66,10 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Yoga</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                Improve flexibility, posture, and injury resistance.
+              <h3>Pranayama & Breathing</h3>
+              <p>
+                Learn breathing techniques to calm the mind and increase lung
+                capacity.
               </p>
             </div>
           </div>
@@ -95,9 +96,9 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Calisthenics</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                Master bodyweight strength and control.
+              <h3>Meditation</h3>
+              <p>
+                Guided meditation sessions for mental clarity and inner peace.
               </p>
             </div>
           </div>
@@ -124,10 +125,8 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Zumba & Cardio</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                High energy fat-burning sessions with fun group workouts.
-              </p>
+              <h3>Power Yoga</h3>
+              <p>Dynamic flows that build strength, stamina and balance.</p>
             </div>
           </div>
         </ScrollStackItem>
@@ -153,9 +152,9 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Personal Coaching</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                Custom diet plans, personal training, and progress tracking.
+              <h3>Beginner Friendly Batches</h3>
+              <p>
+                Special batches designed for newcomers with personal guidance.
               </p>
             </div>
           </div>
@@ -182,9 +181,10 @@ function WhatWeOffer() {
               }}
             />
             <div style={{ position: "relative", zIndex: 2 }}>
-              <h3>Community & Discipline</h3>
-              <p style={{ color: "green", fontWeight: "bold" }}>
-                Train with like-minded people and build lifelong consistency.
+              <h3>Community & Mindfulness</h3>
+              <p>
+                Practice with like-minded people in a calm and positive
+                environment.
               </p>
             </div>
           </div>

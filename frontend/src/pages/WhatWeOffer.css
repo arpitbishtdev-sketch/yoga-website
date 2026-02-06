@@ -29,11 +29,12 @@
 .offer-card h3 {
   font-size: 38px;
   margin-bottom: 18px;
+  color: #e91e63;
 }
 
 .offer-card p {
   font-size: 19px;
-  color: #555;
+  color: #444;
 }
 
 .offer-title {
@@ -53,7 +54,7 @@
   top: 50%;
   width: 35%;
   height: 3px;
-  background: #1b8a3b; /* your green */
+  background: #e91e63;
   transform: translateY(-50%);
 }
 
