@@ -135,7 +135,7 @@ function Navbar() {
           </div>
 
           <Link to="/" className="logo-container">
-            <h2>GYM</h2>
+            <h2>MAHADEVAM YOGA STUDIO</h2>
           </Link>
 
           {!isLoggedIn ? (
