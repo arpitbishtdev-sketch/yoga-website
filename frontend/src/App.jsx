@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
-import { useNavigation } from "react-router-dom";
 
 import useRouteLoader from "./hooks/useRouteLoader";
 
@@ -32,8 +31,6 @@ function Layout() {
   const isAdminRoute = location.pathname.startsWith("/admin");
   const [showAuth, setShowAuth] = useState(false);
   const API = import.meta.env.VITE_API_URL;
-  const navigation = useNavigation();
-  const isLoading = navigation.state === "loading";
   const loading = useRouteLoader();
 
   // ✅ Check login from backend cookie
