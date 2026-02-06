@@ -129,7 +129,7 @@ function Home() {
 
       <section className="experience-section">
         <div className="experience-left">
-          <h1>Why Members Love Training Here</h1>
+          <h1>Why Students Love Practicing Here</h1>
 
           <p>
             More than a gym — this is a place where discipline, energy and
@@ -137,10 +137,10 @@ function Home() {
           </p>
 
           <ul>
-            <li>✔️ Premium equipment & spacious layout</li>
-            <li>✔️ Motivating environment</li>
-            <li>✔️ Friendly & serious fitness community</li>
-            <li>✔️ Clean, aesthetic and powerful vibe</li>
+            <li>✔️ Peaceful and welcoming environment</li>
+            <li>✔️ Certified yoga instructors</li>
+            <li>✔️ Clean and calming studio</li>
+            <li>✔️ Community focused practice</li>
           </ul>
         </div>
 
