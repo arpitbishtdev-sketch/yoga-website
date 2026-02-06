@@ -68,30 +68,10 @@ function Home() {
   return (
     <>
       <section className="home">
-        <div
-          className="hero"
-          style={{
-            backgroundImage: `url(${gbImg})`,
+        <div className="hero" style={{ backgroundImage: `url(${gbImg})` }}>
+          <div className="hero-overlay" />
 
-            backgroundSize: "cover",
-
-            backgroundPosition: "center",
-
-            position: "relative",
-
-            overflow: "hidden",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background: "rgba(99, 94, 94, 0.45)",
-              borderRadius: "inherit",
-            }}
-          />
-
-          <div style={{ position: "relative", zIndex: 2 }}>
+          <div className="hero-content">
             <h1 className="hero-title">
               Transform{" "}
               <span className="rotate-box">
@@ -101,7 +81,7 @@ function Home() {
               </span>
             </h1>
 
-            <p style={{ color: "#4A90E2" }}>
+            <p className="hero-sub">
               Experience calm, balance and strength through guided yoga
               sessions.
             </p>
