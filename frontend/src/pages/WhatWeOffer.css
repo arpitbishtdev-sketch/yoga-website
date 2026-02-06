@@ -1,0 +1,88 @@
+.offer-section {
+  padding-bottom: 1px;
+  margin-top: 0 !important;
+}
+
+.offer-title {
+  text-align: center;
+  font-size: 48px;
+  color: #111;
+  margin-bottom: 120px;
+}
+
+.offer-card {
+  height: 100%;
+  border-radius: 40px;
+  padding: 60px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Remove huge auto margins that might fight with sticky */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.offer-card h3 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.offer-card p {
+  font-size: 19px;
+  color: #555;
+}
+
+.offer-title {
+  position: relative;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 80px 0 60px;
+  color: #111;
+}
+
+/* Left line */
+.offer-title::before,
+.offer-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 3px;
+  background: #1b8a3b; /* your green */
+  transform: translateY(-50%);
+}
+
+/* left side */
+.offer-title::before {
+  left: 0;
+}
+
+/* right side */
+.offer-title::after {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .offer-title {
+    font-size: 28px;
+    margin: 60px 0 40px;
+  }
+
+  .offer-title::before,
+  .offer-title::after {
+    width: 18%; /* 🔥 kam kar diya */
+    height: 2px; /* thoda thin */
+  }
+}
+
+@media (max-width: 420px) {
+  .offer-title::before,
+  .offer-title::after {
+    width: 12%; /* aur kam chhote phones pe */
+  }
+}

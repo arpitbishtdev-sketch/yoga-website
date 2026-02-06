@@ -1,0 +1,24 @@
+.electric-border {
+  position: relative;
+  /* Ensure the container doesn't clip the sparks */
+  overflow: visible;
+}
+
+.eb-canvas {
+  position: absolute;
+  /* We reduce the negative inset so the sparks stay closer to the edge */
+  inset: -45px;
+  pointer-events: none;
+  /* Higher Z-index to put it OVER the card */
+  z-index: 10;
+  filter: drop-shadow(0 0 8px #567c61);
+}
+
+.eb-content {
+  position: relative;
+  /* Lower Z-index than canvas */
+  z-index: 1;
+  /* Make sure your card has a background, otherwise the sparks show through */
+  background: #ffffff;
+  border-radius: 24px;
+}

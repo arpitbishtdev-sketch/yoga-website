@@ -1,0 +1,65 @@
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+  /* margin-top: 500px; */
+}
+
+.auth-modal {
+  width: 380px;
+  background: #0d0f1a;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-height: 420px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-btn.login {
+  background: #1b8a3b;
+  color: white;
+}
+
+.auth-btn.register {
+  background: white;
+  color: black;
+}
+
+.modal-overlay {
+  position: fixed; /* sabse important */
+  inset: 0; /* top:0 left:0 right:0 bottom:0 */
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999; /* navbar se upar */
+}
+
+.modal-box {
+  width: 420px;
+  background: #0d0f1a;
+  padding: 40px;
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}

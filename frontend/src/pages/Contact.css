@@ -1,0 +1,136 @@
+.contact-page {
+  padding: 90px 60px;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.contact-info-card {
+  background: linear-gradient(135deg, #1f5e2a, #2f7b3c);
+  color: white;
+  padding: 56px 60px;
+  border-radius: 26px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* LEFT FORM CARD */
+.contact-left {
+  background: #ffffff;
+  padding: 55px;
+  border-radius: 26px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+.contact-left h2 {
+  font-size: 42px;
+  margin-bottom: 28px;
+}
+
+/* Make EnquiryForm inputs premium */
+.contact-left input,
+.contact-left textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1.5px solid #e6e6e6;
+  margin-bottom: 16px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.contact-left input:focus,
+.contact-left textarea:focus {
+  border-color: #1cff4b;
+  box-shadow: 0 0 0 4px rgba(28, 255, 75, 0.15);
+  outline: none;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 36px;
+}
+
+/* Blocks spacing */
+.info-block {
+  margin-bottom: 22px;
+}
+
+.info-box h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+/* Label (Visit us, Phone, Email) */
+.info-block h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+/* Actual text glow */
+.info-block p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+/* Heading glow */
+.contact-info-card h2 {
+  font-size: 34px;
+  margin-bottom: 26px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+}
+
+/* BUTTON polish */
+.contact-left button {
+  background: #1cff4b;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.contact-left button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(28, 255, 75, 0.35);
+}
+
+.contact-map {
+  background: white;
+  padding: 16px;
+  border-radius: 26px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  height: 100%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

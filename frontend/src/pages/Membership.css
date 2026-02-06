@@ -1,0 +1,124 @@
+.membership-section {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* GREEN CARD */
+.membership-card {
+  width: 100%;
+  max-width: 1300px;
+  background: #2f6f2f;
+  border-radius: 28px;
+  padding: 60px;
+
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT */
+.membership-left h1 {
+  color: white;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.membership-left p {
+  margin-top: 18px;
+  color: #e5e5e5;
+  font-size: 18px;
+  max-width: 520px;
+}
+
+/* BUTTON */
+.join-btn {
+  margin-top: 28px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: #19c463;
+  color: white;
+}
+
+/* RIGHT IMAGE */
+.membership-right {
+  display: flex;
+  justify-content: center;
+}
+
+.membership-right img {
+  height: 320px; /* div jitna hi */
+  width: auto;
+  border-radius: 22px;
+  object-fit: cover;
+
+  transform: scale(1.6); /* ⭐ image badi dikhegi */
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 930px) {
+  .membership-section {
+    padding: 20px;
+  }
+
+  .membership-card {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+    text-align: center;
+  }
+
+  .membership-left {
+    width: 100%;
+  }
+
+  .membership-left h1 {
+    font-size: 34px;
+  }
+
+  .membership-left p {
+    font-size: 15px;
+    margin: 16px auto 0;
+    max-width: 100%;
+  }
+
+  .join-btn {
+    margin: 22px auto 0;
+    width: 100%;
+  }
+
+  .membership-right {
+    margin-top: 30px;
+  }
+
+  .membership-right img {
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+  .membership-right img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .membership-left h1 {
+    font-size: 28px;
+  }
+
+  .membership-right img {
+    height: 260px;
+    width: 260px;
+    object-fit: contain;
+  }
+}

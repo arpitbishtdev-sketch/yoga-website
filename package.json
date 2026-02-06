@@ -1,0 +1,11 @@
+{
+  "name": "gym-backend-root",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "postinstall": "cd backend && npm install"
+  },
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  }
+}

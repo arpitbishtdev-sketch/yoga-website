@@ -1,0 +1,224 @@
+.card-nav-container {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 900px;
+  z-index: 9999;
+}
+
+/* 🔥 GLASS NAVBAR */
+.card-nav {
+  height: 60px; /* always closed by default */
+  overflow: hidden; /* IMPORTANT */
+  position: relative;
+  border-radius: 18px;
+
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card-nav-top {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem 0.55rem 1.2rem;
+  position: relative; /* ⭐⭐⭐ THIS IS THE REAL FIX */
+}
+
+/* 🔥 Hamburger subtle */
+.hamburger-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
+}
+
+/* 🔥 Brand glow */
+/* .logo-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.logo-container h2 {
+  color: #1aff4b;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(26, 255, 75, 0.7);
+}
+
+/* 🔥 Premium CTA button */
+.card-nav-cta-button {
+  background: linear-gradient(135deg, #1aff4b, #0edb3f);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  padding: 0 22px;
+  height: 42px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 20px rgba(26, 255, 75, 0.4);
+}
+
+.card-nav-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(26, 255, 75, 0.6);
+}
+
+.card-nav-content {
+  position: absolute;
+  top: 60px; /* starts below top bar */
+  left: 0;
+  right: 0;
+  padding: 0.6rem;
+
+  display: flex;
+  gap: 12px;
+}
+
+.card-nav.open .card-nav-content {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* 🔥 Floating cards look */
+.nav-card {
+  flex: 1;
+  height: 100%; /* ✅ added */
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, #0f172a, #111827);
+
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 150px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.nav-card-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 22px; /* space under title */
+  color: #ffffff;
+}
+
+.nav-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* vertical breathing like ReactBits */
+}
+
+.nav-card-link {
+  text-decoration: none;
+  color: #cbd5e1; /* softer than white */
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.25s ease;
+}
+
+.nav-card-link:hover {
+  color: #22c55e; /* gym green on hover */
+  transform: translateX(6px);
+}
+
+@media (max-width: 1024px) {
+  .nav-card {
+    padding: 24px 22px;
+    min-height: 130px;
+  }
+
+  .nav-card-label {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .nav-card-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-nav-content {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-card {
+    width: 100%;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .nav-card-label {
+    font-size: 1.25rem;
+  }
+
+  .nav-card-links {
+    gap: 12px;
+  }
+
+  .nav-card-link {
+    font-size: 0.95rem;
+  }
+
+  .card-nav-cta-button {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-card {
+    padding: 18px;
+  }
+
+  .nav-card-label {
+    font-size: 1.1rem;
+  }
+
+  .nav-card-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-nav-container {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

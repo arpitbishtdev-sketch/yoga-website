@@ -1,0 +1,435 @@
+/* remove default gaps */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HOME ===== */
+.home {
+  width: 100%;
+  padding-top: 120px; /* navbar ke niche se hero start */
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  border-radius: 24px;
+  padding: 120px 80px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== TEXT ===== */
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.1;
+}
+
+.rotate-box {
+  color: #1cdb2c;
+  padding: 8px 18px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 25px 0 40px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ===== BUTTON ===== */
+.join-btn {
+  padding: 14px 36px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1cdb2c;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-4px);
+}
+
+.experience-section {
+  width: 88%;
+  max-width: 1300px;
+  margin: 100px auto;
+  margin-bottom: 150px !important;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: #2f6f2f;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.experience-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: radial-gradient(
+    circle at 70% 40%,
+    rgba(0, 0, 0, 0.25),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.experience-left {
+  flex: 1;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*   THIS FIXES IT */
+}
+
+.experience-left h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #e8f5e9;
+}
+
+.experience-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e8f5e9;
+}
+
+.experience-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-left li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: white;
+}
+
+.experience-left li::marker {
+  color: #1cdb2c;
+}
+
+.experience-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 100px 50px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 0 !important; /* navbar gap hatao */
+  }
+
+  .hero {
+    border-radius: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 140px 24px 80px;
+    min-height: 100vh;
+  }
+
+  .card-nav-container {
+    position: fixed; /* 👈 ye main fix hai */
+    top: 12px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .join-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+/* ===== VERY SMALL ===== */
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 28px;
+  }
+}
+
+/* ===== EXPERIENCE SECTION MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .experience-section {
+    width: 94%;
+    margin: 60px auto;
+    padding: 36px 22px;
+    border-radius: 20px;
+
+    flex-direction: column;
+    gap: 40px;
+    min-height: auto;
+  }
+
+  .experience-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .experience-left h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .experience-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .experience-left li {
+    font-size: 14px;
+  }
+
+  .experience-right {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.92);
+    transform-origin: center;
+  }
+}
+
+/* ===== PREMIUM STATS SECTION ===== */
+.stats-section {
+  width: 92%;
+  max-width: 1300px;
+  margin: 90px auto 130px;
+  padding: 50px 60px;
+
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  border-radius: 30px;
+
+  background: radial-gradient(circle at 20% 30%, #0f1f17, #0a0f0c 70%);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    inset 0 0 120px rgba(28, 219, 44, 0.06);
+}
+
+/* ===== LEFT LOGO BADGE ===== */
+.stats-left {
+  flex: 0 0 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-logo {
+  width: 200px;
+  border-radius: 50%;
+  padding: 14px;
+  background: radial-gradient(circle, #0f1f17, #0a0f0c);
+  box-shadow:
+    0 0 25px rgba(28, 219, 44, 0.35),
+    inset 0 0 25px rgba(28, 219, 44, 0.15);
+}
+
+/* ===== RIGHT SIDE GRID ===== */
+.stats-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ===== EACH STAT = PREMIUM CARD ===== */
+.stat-box {
+  background: linear-gradient(145deg, #0d1511, #0a0f0c);
+  border-radius: 22px;
+  padding: 28px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.35s ease;
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 40px rgba(28, 219, 44, 0.04);
+}
+
+.stat-box:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 25px 60px rgba(28, 219, 44, 0.25),
+    inset 0 0 60px rgba(28, 219, 44, 0.08);
+}
+
+/* icon + number */
+.stat-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.stat-icon {
+  width: 46px;
+  height: 46px;
+  filter: drop-shadow(0 0 8px rgba(28, 219, 44, 0.6));
+}
+
+/* glowing number */
+.stat-number {
+  font-size: 56px;
+  font-weight: 800;
+  color: #1cdb2c;
+  text-shadow:
+    0 0 12px rgba(28, 219, 44, 0.9),
+    0 0 28px rgba(28, 219, 44, 0.6);
+}
+
+.plus {
+  margin-left: 6px;
+}
+
+/* label */
+.stat-label {
+  font-size: 15px;
+  color: #d8f5df;
+  letter-spacing: 0.6px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stats-right {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+/* ===== STATS SECTION — TABLET ===== */
+@media (max-width: 1024px) {
+  .stats-section {
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+  .stats-logo {
+    width: 160px;
+  }
+
+  .stat-number {
+    font-size: 46px;
+  }
+}
+
+/* ===== STATS SECTION — MOBILE ===== */
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    padding: 36px 20px;
+    gap: 30px;
+    border-radius: 24px;
+  }
+
+  /* logo on top center */
+  .stats-left {
+    flex: unset;
+  }
+
+  .stats-logo {
+    width: 140px;
+  }
+
+  /* cards in column */
+  .stats-right {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: 100%;
+  }
+
+  .stat-box {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .stat-top {
+    gap: 12px;
+  }
+
+  .stat-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .stat-number {
+    font-size: 38px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 420px) {
+  .stats-logo {
+    width: 120px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,235 @@
+:root {
+  --primary-green: #1b8a3b;
+  --dark-green: #0a4d26;
+  --light-bg: #f0fdf4;
+  --text-main: #1a2e20;
+  --text-muted: #5b8c67;
+}
+
+.plans-section {
+  padding: 140px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.plans-title {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.plans-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Grid Layout */
+/* .plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+} */
+.plans-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.plan-card {
+  width: 300px; /* fixed card width for clean row */
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 30px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* Glass shine sweep */
+.plan-card::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -45%;
+  width: 40%;
+  height: 300%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  transition: 0.8s;
+}
+
+.plan-card:hover::before {
+  left: 120%;
+}
+
+.plan-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(27, 138, 59, 0.18);
+  border-color: var(--primary-green);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fff9 100%);
+}
+
+/* Popular badge */
+.popular-badge {
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-green);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Typography */
+.plan-name {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  margin: 10px 0;
+  color: var(--text-main);
+  position: relative;
+  display: inline-block;
+}
+
+/* Price glow circle */
+.plan-price::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(rgba(27, 138, 59, 0.15), transparent 70%);
+  top: -40px;
+  left: -30px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.amount {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.plan-duration {
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* Features List */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.plan-features li {
+  margin: 15px 0;
+  color: #4a5568;
+
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.plan-card:hover .plan-features li {
+  transform: translateX(6px);
+}
+
+.check {
+  color: var(--primary-green);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Button */
+.plan-button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+/* Pulse for popular button */
+.plan-button.popular-btn {
+  animation: pulse 2s infinite;
+}
+
+.plan-card.popular-card {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(27, 138, 59, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(27, 138, 59, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(27, 138, 59, 0);
+  }
+}
+
+.plan-button:hover {
+  background-color: var(--dark-green);
+  box-shadow: 0 8px 18px rgba(10, 77, 38, 0.35);
+}
+
+.group-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 80px 0 30px;
+  color: var(--dark-green);
+  font-weight: 800;
+}

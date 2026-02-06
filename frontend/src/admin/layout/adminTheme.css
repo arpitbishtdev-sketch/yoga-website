@@ -1,0 +1,176 @@
+:root {
+  --green: #1b8a3b;
+  --light: #f5f7fa;
+  --card: #ffffff;
+}
+
+/* Layout */
+.admin-content {
+  background: var(--light);
+  padding: 30px;
+}
+
+/* ========== TOP GRID ========== */
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 14px;
+  border-left: 6px solid var(--green);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--green);
+}
+
+/* ========== Earnings Card (Top Right) ========== */
+
+.earnings-card {
+  background: linear-gradient(135deg, #1b8a3b, #0e5c25);
+  color: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.earnings-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.earnings-top select {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.earnings-card h2 {
+  font-size: 34px;
+  margin-top: 12px;
+}
+
+/* ========== Graph Card ========== */
+
+.chart-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.chart-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* ========== Table ========== */
+
+.table-card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/* Badges */
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.active {
+  background: #d4f8e8;
+  color: var(--green);
+}
+
+.badge.expired {
+  background: #ffd6d6;
+  color: #c0392b;
+}
+
+/* ========== Sidebar Modern ========== */
+
+.sidebar-modern {
+  width: 240px;
+  min-height: 100vh;
+  background: #0f1115;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--green);
+  margin-bottom: 40px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #cfcfcf;
+  padding: 12px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.25s ease;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: var(--green);
+  color: white;
+  transform: translateX(4px);
+}

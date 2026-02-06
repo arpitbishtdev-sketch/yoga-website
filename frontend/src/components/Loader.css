@@ -1,0 +1,39 @@
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: #0b0f14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-box {
+  text-align: center;
+}
+
+.loader-line {
+  width: 240px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: #1cdb2c;
+  animation: load 1.2s ease-in-out infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  51% {
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}

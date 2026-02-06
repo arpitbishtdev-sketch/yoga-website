@@ -1,0 +1,96 @@
+/* .login-card {
+  width: 420px;
+  background: #0d0f1a;
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  padding-top: 250px;
+  padding-right: 100px;
+  padding-left: 50px;
+} */
+
+.login-card {
+  width: 420px;
+  background: #0d0f1a;
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  margin: auto;
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.step {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #2b2e45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step.active {
+  background: #1b8a3b;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background: #2b2e45;
+}
+
+/* Buttons */
+.google-btn,
+.email-btn,
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background: white;
+  color: black;
+}
+
+.email-btn {
+  background: #1b8a3b;
+  color: white;
+}
+
+.login-btn {
+  background: #1b8a3b;
+  color: white;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.back {
+  display: block;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #aaa;
+}
