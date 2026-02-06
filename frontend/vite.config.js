@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // 👈 THIS LINE FIXES RENDER SPA REFRESH
+  base: "./", // ✅ THIS IS THE MAGIC
 });
