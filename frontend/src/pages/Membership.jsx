@@ -11,10 +11,10 @@ export default function Membership() {
       <div className="membership-card">
         {/* LEFT */}
         <div className="membership-left">
-          <h1>Choose Your Perfect Membership</h1>
+          <h1>Choose Your Yoga Practice Plan</h1>
           <p>
-            Train solo or with your partner. Flexible plans, premium equipment,
-            and an environment built for real transformation.
+            Practice at your own pace. Flexible class plans, calm environment,
+            and guidance for balance, breath and mindfulness.
           </p>
 
           <button className="join-btn" onClick={() => navigate("/plans")}>

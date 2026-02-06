@@ -8,7 +8,8 @@
 .membership-card {
   width: 100%;
   max-width: 1300px;
-  background: #2f6f2f;
+  background: linear-gradient(145deg, #ffffff, #ffeaf3);
+  box-shadow: 0 25px 60px rgba(233, 30, 99, 0.15);
   border-radius: 28px;
   padding: 60px;
 
@@ -20,7 +21,7 @@
 
 /* LEFT */
 .membership-left h1 {
-  color: white;
+  color: #e91e63;
   font-size: 54px;
   font-weight: 800;
   line-height: 1.1;
@@ -28,7 +29,7 @@
 
 .membership-left p {
   margin-top: 18px;
-  color: #e5e5e5;
+  color: #444;
   font-size: 18px;
   max-width: 520px;
 }
@@ -41,7 +42,7 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
-  background: #19c463;
+  background: linear-gradient(135deg, #e91e63, #f06292);
   color: white;
 }
 
