@@ -29,15 +29,19 @@
 }
 
 .cta-box h2 {
-  color: #444;
-  font-size: 18px;
-  margin-bottom: 12px;
+  color: #2d2d2d;
+  font-size: 48px; /* BIG like gym */
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
 }
 
 .cta-box p {
-  font-size: 18px;
-  opacity: 0.9;
-  margin-bottom: 28px;
+  font-size: 20px; /* same feel as gym */
+  color: #555;
+  line-height: 1.6;
+  max-width: 620px;
+  margin-bottom: 32px;
 }
 
 .cta-btn {
@@ -84,7 +88,7 @@
 }
 
 .cta-image img {
-  width: 420px;
+  width: 480px;
   height: auto;
   object-fit: contain;
 
@@ -117,5 +121,15 @@
 
   .cta-image img {
     width: 180px;
+  }
+
+  .cta-box h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .cta-box p {
+    font-size: 16px;
+    text-align: center;
   }
 }
