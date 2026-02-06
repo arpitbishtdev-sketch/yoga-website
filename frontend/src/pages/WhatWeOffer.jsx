@@ -30,7 +30,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />
@@ -61,7 +61,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />
@@ -91,7 +91,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />
@@ -120,7 +120,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />
@@ -147,7 +147,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />
@@ -176,7 +176,7 @@ function WhatWeOffer() {
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "rgba(99, 94, 94, 0.45)",
+                background: "rgba(0,0,0,0.65)",
                 borderRadius: "40px",
               }}
             />

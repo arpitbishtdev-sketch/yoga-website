@@ -27,14 +27,14 @@
 }
 
 .offer-card h3 {
-  font-size: 38px;
-  margin-bottom: 18px;
   color: #e91e63;
+  font-size: 40px;
 }
 
 .offer-card p {
-  font-size: 19px;
-  color: #444;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .offer-title {
