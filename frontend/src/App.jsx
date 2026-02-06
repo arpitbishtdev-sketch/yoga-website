@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
+import { useNavigation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -29,13 +30,8 @@ function Layout() {
   const isAdminRoute = location.pathname.startsWith("/admin");
   const [showAuth, setShowAuth] = useState(false);
   const API = import.meta.env.VITE_API_URL;
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
 
   // ✅ Check login from backend cookie
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -96,7 +92,8 @@ function Layout() {
 
   return (
     <>
-      {loading && <Loader />}
+      {isLoading && <Loader />}
+
       <ScrollToTop />
 
       {!isAdminRoute && (
